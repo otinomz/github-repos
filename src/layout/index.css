@@ -18,6 +18,7 @@
     font-size:14px;
     border-radius: 5px;
     width: 55%;
+    outline: none;
     border: 1px solid rgb(218, 206, 206);
 }
 
@@ -29,7 +30,13 @@
     background: transparent;
     outline: none;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.top > select:hover{
+    background: rgb(231, 225, 225);
+}
+
 
 .top > button {
     background: #2da44e;
@@ -37,10 +44,22 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    transition: 0.5s;
 }
+
+.top > button:hover {
+    background: #2b8a46;
+}
+
 
 .top > button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
 
+}
+
+
+
+.repo__container {
+    
 }
