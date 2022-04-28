@@ -2,6 +2,7 @@ import React from 'react'
 import "./index.css"
 import Repo from "../assets/repo.svg"
 import Star from "../assets/star.svg"
+import Down from "../assets/down.svg"
 
 
 const Layout = () => {
@@ -60,12 +61,15 @@ const Layout = () => {
                         </div>
 
                         <div className="left__bottom">
-                            <div>
-                                <button>
-                                    <img src={Star} alt="star icon" />
-                                    Star
-                                </button>
-                            </div>
+                            <button>
+                                <img className="star" src={Star} alt="star icon" />
+                                Star
+                            </button>
+
+                            <button className="down">
+                                <img src={Down} alt=" down icon" />
+                            </button>
+                            {/* </div> */}
                             
                         </div>
 

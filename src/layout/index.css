@@ -59,9 +59,63 @@
 
 .repo__container{
     border-top: 1px solid rgb(218, 206, 206);
+    padding: 24px 0;
 }
 
 .repo__container > .repo__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.repo__container > .repo__top > .left__top > a {
+    color: #0969da;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.repo__container > .repo__top > .left__top > a:hover {
+    text-decoration: underline;
+}
+
+.repo__container > .repo__top > .left__top > button {
+    color: #57606a;
+    border: 1px solid rgb(218, 206, 206);
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.left__bottom {
+    display: flex;
+}
+
+
+.left__bottom > button{
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    border: 1px solid rgb(218, 206, 206);
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.left__bottom > button > img {
+    filter: brightness(0) invert(0.4);
+}
+
+.star{
+    margin-right: 3px;
+}
+
+.left__bottom > .down{
+    padding: 5px 8px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
 }
