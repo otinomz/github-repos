@@ -1,8 +1,6 @@
-import './App.css';
-
 const App = () => {
   return (
-    <div className="App">
+    <div className="container">
       <h1>Github Repos</h1>
     </div>
   );
