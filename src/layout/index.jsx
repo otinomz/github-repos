@@ -54,7 +54,6 @@ const Layout = () => {
                 <div className="repo__container">
 
                     <section className="repo__top">
-                        
                         <div className="left__top">
                             <a href="#">github-repos</a>
                             <button>private</button>
@@ -68,22 +67,29 @@ const Layout = () => {
 
                             <button className="down">
                                 <img src={Down} alt=" down icon" />
-                            </button>
-                            {/* </div> */}
-                            
+                            </button>                            
                         </div>
-
                     </section>
                     
-                    {/* <section className="repo__bottom">
-
-                        <div className="left__bottom">
-                            <div className="language"></div>
+                    <section className="repo__top">
+                        <div className="left__top">
+                            <div className="language">
+                                HTML
+                            </div>
                             <p>Updated 1 hour ago</p>
                         </div>
-                    </section> */}
 
+                        <div className="left__bottom">
+                            <button>
+                                <img className="star" src={Star} alt="star icon" />
+                                Star
+                            </button>
 
+                            <button className="down">
+                                <img src={Down} alt=" down icon" />
+                            </button>                            
+                        </div>
+                    </section>
                 </div>
 
             </section>

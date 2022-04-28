@@ -60,6 +60,7 @@
 .repo__container{
     border-top: 1px solid rgb(218, 206, 206);
     padding: 24px 0;
+    color: #333;
 }
 
 .repo__container > .repo__top {
@@ -81,6 +82,11 @@
     text-decoration: underline;
 }
 
+.left__top {
+    display: flex;
+    align-items: center;
+}
+
 .repo__container > .repo__top > .left__top > button {
     color: #57606a;
     border: 1px solid rgb(218, 206, 206);
@@ -91,6 +97,11 @@
     margin-right: 10px;
 }
 
+.left__top > p {
+    font-size: 14px;
+    margin-left: 15px;
+    text-align: right;
+ }
 
 .left__bottom {
     display: flex;
@@ -119,3 +130,4 @@
     border-left: none;
     border-radius: 0 5px 5px 0;
 }
+
