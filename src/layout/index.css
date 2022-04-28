@@ -77,25 +77,28 @@
     margin-bottom: 12px;
 }
 
-.repo__container > .repo__top > .left__top > a {
+.repo__container > .repo__top > .left__top > .text > a {
     color: #0969da;
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
     text-decoration: none;
     margin-right: 10px;
+    
 }
 
-.repo__container > .repo__top > .left__top > a:hover {
+.repo__container > .repo__top > .left__top > .text > a:hover {
     text-decoration: underline;
 }
+
+
 
 .left__top {
     display: flex;
     align-items: center;
 }
 
-.repo__container > .repo__top > .left__top > button {
+.repo__container > .repo__top > .left__top > .text > .btn {
     color: #57606a;
     border: 1px solid rgb(218, 206, 206);
     padding: 2px 7px;
@@ -103,6 +106,7 @@
     font-size: 12px;
     text-decoration: none;
     margin-right: 10px;
+    display: none;
 }
 
 .left__top > p {
