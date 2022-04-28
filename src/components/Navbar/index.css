@@ -38,9 +38,9 @@
 .right__items > li:nth-child(2)::after {
     content: "";
     height: 2px;
-    width: 140%;
+    width: 130%;
     position: absolute;
-    left: -23px;
+    left: -13px;
     bottom: -15px;
     background: crimson;
 }
