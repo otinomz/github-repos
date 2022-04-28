@@ -3,7 +3,44 @@
    justify-content: space-between;
 }
 
-
 .right{
     width: 78%;
+}
+
+.top {
+    border-bottom: 1px solid rgb(218, 206, 206);
+    padding: 16px 0;
+    display: flex;
+}
+
+.top > .search {
+    padding: 7px 12px;
+    font-size:14px;
+    border-radius: 5px;
+    width: 55%;
+    border: 1px solid rgb(218, 206, 206);
+}
+
+.top > select, .top > button{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(218, 206, 206);
+    margin-left: 15px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.top > button {
+    background: #2da44e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top > button > img {
+    margin-right: 4px;
+    filter: brightness(1) invert(1);
+
 }
