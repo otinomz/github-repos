@@ -74,9 +74,24 @@ const Layout = () => {
                     <section className="repo__top">
                         <div className="left__top">
                             <div className="language">
-                                HTML
+                                <div className="color"></div>
+                                <p> HTML</p>
                             </div>
                             <p>Updated 1 hour ago</p>
+                        </div>
+
+                        <div className="left__bottom">
+                            <div className="chart"></div>                            
+                        </div>
+                    </section>
+                </div>
+
+                <div className="repo__container">
+
+                    <section className="repo__top">
+                        <div className="left__top">
+                            <a href="#">github-repos</a>
+                            <button>private</button>
                         </div>
 
                         <div className="left__bottom">
@@ -88,6 +103,55 @@ const Layout = () => {
                             <button className="down">
                                 <img src={Down} alt=" down icon" />
                             </button>                            
+                        </div>
+                    </section>
+                    
+                    <section className="repo__top">
+                        <div className="left__top">
+                            <div className="language">
+                                <div className="color"></div>
+                                <p> Javascript</p>
+                            </div>
+                            <p>Updated 1 hour ago</p>
+                        </div>
+
+                        <div className="left__bottom">
+                            <div className="chart"></div>                            
+                        </div>
+                    </section>
+                </div>
+
+                <div className="repo__container">
+
+                    <section className="repo__top">
+                        <div className="left__top">
+                            <a href="#">github-repos</a>
+                            <button>private</button>
+                        </div>
+
+                        <div className="left__bottom">
+                            <button>
+                                <img className="star" src={Star} alt="star icon" />
+                                Star
+                            </button>
+
+                            <button className="down">
+                                <img src={Down} alt=" down icon" />
+                            </button>                            
+                        </div>
+                    </section>
+                    
+                    <section className="repo__top">
+                        <div className="left__top">
+                            <div className="language">
+                                <div className="color"></div>
+                                <p> Solidity</p>
+                            </div>
+                            <p>Updated 1 hour ago</p>
+                        </div>
+
+                        <div className="left__bottom">
+                            <div className="chart"></div>                            
                         </div>
                     </section>
                 </div>

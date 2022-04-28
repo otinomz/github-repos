@@ -67,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .repo__container > .repo__top > .left__top > a {
@@ -100,7 +100,7 @@
 .left__top > p {
     font-size: 14px;
     margin-left: 15px;
-    text-align: right;
+    letter-spacing: 0.9px;
  }
 
 .left__bottom {
@@ -131,3 +131,26 @@
     border-radius: 0 5px 5px 0;
 }
 
+.language{
+    display: flex;
+    align-items: center;
+}
+
+.language > p {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.color{
+    height: 10px;
+    width: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.left__bottom > .chart {
+    height: 2px;
+    width: 130px;
+    background: green;
+}
