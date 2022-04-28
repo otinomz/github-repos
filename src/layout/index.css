@@ -79,6 +79,7 @@
 
 .repo__container > .repo__top > .left__top > a {
     color: #0969da;
+    font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
     text-decoration: none;
