@@ -22,3 +22,7 @@
     margin-right: 50px;
     font-size: 16px;
 }
+
+.right__items > li:nth-child(2) {
+    border-bottom: 1px solid red;
+}
