@@ -10,7 +10,9 @@ const Layout = () => {
             
             
             <section className="right">
-                <SearchBar/>   
+                {/* this houses the Repository card 
+                and the seaarch bar at the top  */}
+                <SearchBar />
                 <RepoCard/>
             </section>
         </div>
