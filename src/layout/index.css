@@ -73,7 +73,7 @@
 .repo__container > .repo__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 12px;
 }
 
@@ -137,6 +137,7 @@
     display: flex;
     align-items: center;
     padding: 5px 12px;
+    margin-top: 5px;
     border: 1px solid rgb(218, 206, 206);
     border-radius: 5px 0 0 5px;
     cursor: pointer;
