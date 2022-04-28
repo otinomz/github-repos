@@ -21,31 +21,20 @@ const Layout = () => {
                         className="search"
                     />
                 
-                    <select
-                        required
-                        name="category"
-                        id="category"
-                    >
-                        <option  value="African">Type</option> 
-                    </select>
-                    
-                    <select
-                        required
-                        name="category"
-                        id="category"
-                    >
-                        <option  value="Language">Language</option> 
-                    </select>
+                    <button className="select">
+                        Type
+                        <img src={ Down } alt="" />
+                    </button>
+                    <button className="select">
+                        Language
+                        <img src={ Down } alt="" />
+                    </button>
+                    <button className="select">
+                        Sort
+                        <img src={ Down } alt="" />
+                    </button>
 
-                    <select
-                        required
-                        name="category"
-                        id="category"
-                    >
-                        <option  value="Sort">Sort</option> 
-                    </select>
-
-                    <button>
+                    <button className="button">
                         <img src={Repo} alt="" />
                         New
                     </button>

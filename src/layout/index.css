@@ -4,7 +4,7 @@
 }
 
 .right{
-    width: 78%;
+    width: 69%;
 }
 
 .top {
@@ -16,45 +16,51 @@
     padding: 7px 12px;
     font-size:14px;
     border-radius: 5px;
-    width: 55%;
+    width: 60%;
     outline: none;
     border: 1px solid rgb(218, 206, 206);
 }
 
-.top > select, .top > button{
+.top > .select, .top > .button{
     padding: 7px 10px;
     border-radius: 5px;
     border: 1px solid rgb(218, 206, 206);
     margin-left: 15px;
-    background: transparent;
+    background: white;
     outline: none;
     cursor: pointer;
     transition: 0.5s;
-}
-
-.top > select:hover{
-    background: whitesmoke;
-}
-
-
-.top > button {
-    background: #2da44e;
-    color: #fff;
+    color: grey;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 14px;
     transition: 0.5s;
 }
 
-.top > button:hover {
+.select > img {
+    margin-left: 4px;
+}
+
+
+.top > .select:hover{
+    background: whitesmoke;
+}
+
+
+.top > .button {
+    background: #2da44e;
+    color: #fff;
+}
+
+.top > .button:hover {
     background: #2b8a46;
 }
 
 
-.top > button > img {
+.top > .button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
-
 }
 
 .repo__container{
