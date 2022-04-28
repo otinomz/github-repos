@@ -1,32 +1,8 @@
 import React from 'react'
 import "./index.css"
-
-const List = [
-    {
-        id: 1,
-        name: "Overview"
-    },
-    {
-        id: 2,
-        name: "Repository"
-    },
-    {
-        id: 3,
-        name: "Projects"
-    },
-    {
-        id: 4,
-        name: "Packages"
-    },
-    {
-        id: 5,
-        name: "Stars"
-    },
-]
+import { List } from './List'
 
 const Navbar = () => {
-    
-    
     return (
         <nav className="nav">
             <section>
