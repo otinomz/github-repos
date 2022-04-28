@@ -1,11 +1,12 @@
 import { Navbar } from "./components";
+import Layout from "./layout";
 
 const App = () => {
   return (
     <>
       <Navbar/>
       <div className="container">
-        <h1>Github Repos</h1>
+        <Layout/>
       </div>
     </>
   )

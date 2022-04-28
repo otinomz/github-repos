@@ -17,7 +17,7 @@
 
 .right__items{
     display: flex;
-    flex: 0.7;
+    width: 75%;
 }
 
 .right__items > li {
