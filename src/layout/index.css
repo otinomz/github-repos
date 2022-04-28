@@ -67,7 +67,7 @@
 .repo__container{
     border-top: 1px solid rgb(218, 206, 206);
     padding: 24px 0;
-    color: #333;
+    color: rgb(100, 98, 98);
 }
 
 .repo__container > .repo__top {
@@ -92,13 +92,18 @@
 }
 
 
-
-.left__top {
+.left__topz {
     display: flex;
     align-items: center;
 }
 
-.repo__container > .repo__top > .left__top > .text > .btn {
+.left__top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left__top > .text > button {
     color: #57606a;
     border: 1px solid rgb(218, 206, 206);
     padding: 2px 7px;
@@ -106,13 +111,21 @@
     font-size: 12px;
     text-decoration: none;
     margin-right: 10px;
-    display: none;
 }
 
-.left__top > p {
+.left__top > .description {
+    margin: 14px 0 0;
+    font-size: 16px;
+    padding: 0 24px 0 0;
+    
+}
+
+
+.left__topz > p {
     font-size: 14px;
     margin-left: 15px;
     letter-spacing: 0.9px;
+    color: rgb(100, 98, 98);
  }
 
 .left__bottom {

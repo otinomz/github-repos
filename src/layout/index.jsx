@@ -46,7 +46,6 @@ const Layout = () => {
                             <div className="text">
                                 <a href="#"> github-repos </a>
                                 <button> private </button>
-                                
                             </div>
                             <p className="description">Deliver food to your favorite restaurant</p>
                         </div>
@@ -63,8 +62,8 @@ const Layout = () => {
                         </div>
                     </section>
                     
-                    {/* <section className="repo__top">
-                        <div className="left__top">
+                    <section className="repo__top">
+                        <div className="left__topz">
                             <div className="language">
                                 <div className="color"></div>
                                 <p> HTML</p>
@@ -75,7 +74,7 @@ const Layout = () => {
                         <div className="left__bottom">
                             <div className="chart"></div>                            
                         </div>
-                    </section> */}
+                    </section>
                 </div>
 
                 {/* <div className="repo__container">
