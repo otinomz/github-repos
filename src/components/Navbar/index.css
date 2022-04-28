@@ -10,13 +10,13 @@
 .nav > section{    
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 .right__items{
     display: flex;
-    width: 66%;
+    width: 73%;
 }
 
 .right__items > li {
