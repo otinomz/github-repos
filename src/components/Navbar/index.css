@@ -2,6 +2,7 @@
     width: 100%;
     border-bottom: 1px solid rgb(218, 206, 206);
     padding: 30px 20px 12px;
+    color: #333;
 }
 
 .nav > section{    
@@ -10,7 +11,6 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .right__items{
     display: flex;
@@ -23,6 +23,12 @@
     font-size: 16px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.right__items > li > p {
+    margin-left: 5px;
 }
 
 .right__items > li:nth-child(2) {
