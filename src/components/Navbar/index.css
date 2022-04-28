@@ -1,0 +1,24 @@
+.nav {
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 206, 206);
+    padding: 30px 20px;
+}
+
+.nav > section{    
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.right__items{
+    display: flex;
+    flex: 0.7;
+}
+
+.right__items > li {
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 16px;
+}
