@@ -33,7 +33,7 @@
 }
 
 .top > select:hover{
-    background: rgb(231, 225, 225);
+    background: whitesmoke;
 }
 
 
@@ -137,7 +137,7 @@
 }
 
 .language > p {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.7px;
 }
 

@@ -77,7 +77,7 @@ const Layout = () => {
                                 <div className="color"></div>
                                 <p> HTML</p>
                             </div>
-                            <p>Updated 1 hour ago</p>
+                            <p>Updated 1 hours ago</p>
                         </div>
 
                         <div className="left__bottom">
@@ -90,8 +90,8 @@ const Layout = () => {
 
                     <section className="repo__top">
                         <div className="left__top">
-                            <a href="#">github-repos</a>
-                            <button>private</button>
+                            <a href="#">Trofira</a>
+                            <button>public</button>
                         </div>
 
                         <div className="left__bottom">
@@ -112,7 +112,7 @@ const Layout = () => {
                                 <div className="color"></div>
                                 <p> Javascript</p>
                             </div>
-                            <p>Updated 1 hour ago</p>
+                            <p>Updated 21 hours ago</p>
                         </div>
 
                         <div className="left__bottom">
@@ -125,8 +125,8 @@ const Layout = () => {
 
                     <section className="repo__top">
                         <div className="left__top">
-                            <a href="#">github-repos</a>
-                            <button>private</button>
+                            <a href="#">Fee-Collector</a>
+                            <button>public</button>
                         </div>
 
                         <div className="left__bottom">
@@ -147,7 +147,7 @@ const Layout = () => {
                                 <div className="color"></div>
                                 <p> Solidity</p>
                             </div>
-                            <p>Updated 1 hour ago</p>
+                            <p>Updated 4 days ago</p>
                         </div>
 
                         <div className="left__bottom">
