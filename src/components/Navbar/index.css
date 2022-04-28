@@ -32,15 +32,19 @@
 }
 
 .right__items > li:nth-child(2) {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .right__items > li:nth-child(2)::after {
     content: "";
     height: 2px;
-    width: 150%;
+    width: 140%;
     position: absolute;
-    left: -19px;
+    left: -23px;
     bottom: -15px;
     background: crimson;
+}
+
+.right__items > li > img{
+    filter: brightness(0) invert(0.4);
 }
