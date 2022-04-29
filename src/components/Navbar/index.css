@@ -50,3 +50,10 @@
 .right__items > li > img{
     filter: brightness(0) invert(0.4);
 }
+
+
+@media screen and (max-width: 870px) {
+    .nav{
+        display: none;
+    }
+}
