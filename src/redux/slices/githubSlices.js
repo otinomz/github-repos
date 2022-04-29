@@ -1,5 +1,6 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit"
-import { fetchRepositoriesAction } from "./githubActions";
+import { fetchRepositoriesAction } from "../../packages/api";
+
 
 // slices to manage actions and change the state
 const repositoriesSlice = createSlice({
