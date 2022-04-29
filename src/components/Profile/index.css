@@ -94,6 +94,15 @@
     filter: brightness(0) invert(0.5);
 }
 
+.followers__info > div > span, 
+.location__info > div > span,
+.link__info > div > span{
+    font-weight: bold;
+    margin-right: 3px;
+    color: #24292f;
+}
+
+
 
 .location__info > div,
 .link__info > div{
