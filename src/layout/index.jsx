@@ -14,7 +14,7 @@ const Layout = () => {
                     
 
                     <div>
-                        <p>One code at a time cos what i cannot create, I do not understand</p>
+                        One code at a time cos what i cannot create, I do not understand
                     </div>
 
                     <button>Edit Profile</button>
