@@ -10,9 +10,9 @@ const Navbar = () => {
 
                 <ul className="right__items">
                     { List.map(({id, name, icon}) => (
-                        <li>
+                        <li key={id}>
                             <img className="grey" src={icon} alt="" />
-                            <p key={id}>{name}</p>
+                            <p>{name}</p>
                         </li>
                     ))}
                 </ul>
