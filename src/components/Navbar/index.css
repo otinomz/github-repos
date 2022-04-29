@@ -1,7 +1,6 @@
 .nav {
     width: 100%;
     border-bottom: 1px solid rgb(218, 206, 206);
-    padding: 42px 20px 12px;
     color: #333;
     position: sticky;
     top: 0;
@@ -12,11 +11,12 @@
     justify-content: space-between;
     max-width: 1250px;
     margin: 0 auto;
+    padding: 42px 24px 12px;
 }
 
 .right__items{
     display: flex;
-    width: 73%;
+    width: 65%;
 }
 
 .right__items > li {

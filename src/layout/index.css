@@ -1,7 +1,12 @@
 .layout {
-   display: flex; 
-   justify-content: space-between;
-   position: relative;
+    display: flex; 
+    justify-content: space-between;
+    position: relative;   
+    padding: 0 24px;
+}
+
+.left{
+    padding-left: 12px;
 }
 
 .left > .profile__circle{
@@ -9,13 +14,52 @@
     width: 270px;
     border-radius: 50%;
     border: 1px solid rgb(218, 206, 206);
-    position: absolute;
+    position: relative;
     z-index: 20;
     background: white;
-    top: -20px;   
+    top: -20px;
+    overflow: hidden;
 }
+
+.profile__circle > img {
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+}
+
+
+    /* <div className="profile__description">
+        <span>otinomz</span>
+        #57606a 270px
+
+        <div>
+            #24292f
+            16px
+            <p>One code at a time cos what i cannot create, I do not understand</p>
+        </div>
+
+        padding 5px 16px
+        <button>Edit Profile</button>
+
+    </div> */
+
+.profile__description{
+    /* position: absolute; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .right{
     width: 76%;
-    padding: 0 25px 0 0;
 }
