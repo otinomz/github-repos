@@ -46,9 +46,45 @@
 
 .profile__description > button{
     width: 100%;
-    padding: 5px 16px;
+    padding: 8px 16px;
+    background: #f6f8fa;
+    color: #24292f;
+    border-radius: 5px;
     border: 1px solid rgb(218, 206, 206);
+    cursor: pointer;
 }
+
+    
+.followers__info {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: #57606a;
+    margin: 16px 0;
+}
+
+.followers__info > div, 
+.location__info > div,
+.link__info > div{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    padding: 4px 0;
+}
+
+.followers__info > div > img, 
+.location__info > div > img,
+.link__info > div > img{
+    margin-right: 5px;
+    filter: brightness(0) invert(0.5);
+}
+
+
+.location__info > div,
+.link__info > div{
+    color: #24292f;
+}
+
 
 
 
