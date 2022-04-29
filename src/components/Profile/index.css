@@ -1,0 +1,146 @@
+.left > .profile__circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid rgb(218, 206, 206);
+    position: relative;
+    z-index: 20;
+    background: white;
+    top: -20px
+}
+
+.profile__circlez{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgb(218, 206, 206);
+    z-index: 20;
+    padding: 16px;
+    background-size: contain;
+    border: 1px solid rgb(218, 206, 206);
+    bottom: 25px;
+    right: 18px;
+    background: white;
+}
+
+.profile__circlez > img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.profile__circle > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background: whitesmoke;
+    position: absolute;
+    background-size: contain;
+}
+
+.profile__description{
+    width: 90%;
+    margin-top: -20px;
+}
+
+.profile__description > span {
+    font-size: 24px;
+    color: #57606a;
+    padding: 16px 0;
+    display: block;
+}
+
+.profile__description > div{
+    font-size: 16px;
+    color: #24292f;
+    line-height: 24px;
+    margin-bottom: 16px;
+    letter-spacing: 0.1px;
+}
+
+.profile__description > button{
+    width: 100%;
+    padding: 8px 16px;
+    background: #f6f8fa;
+    color: #24292f;
+    border-radius: 5px;
+    border: 1px solid rgb(218, 206, 206);
+    cursor: pointer;
+}
+
+    
+.followers__info {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: #57606a;
+    margin: 16px 0;
+}
+
+.followers__info > div, 
+.location__info > div,
+.link__info > div{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    padding: 4px 0;
+}
+
+.followers__info > div > img, 
+.location__info > div > img,
+.link__info > div > img{
+    margin-right: 5px;
+    filter: brightness(0) invert(0.5);
+}
+
+.followers__info > div > span, 
+.location__info > div > span,
+.link__info > div > span{
+    font-weight: bold;
+    margin-right: 3px;
+    color: #24292f;
+}
+
+
+.location__info > div,
+.link__info > div{
+    color: #24292f;
+}
+
+.organizations{
+    width: 90%;
+    margin: 16px 0 0;
+    padding: 16px 0 ;
+    border-top: 1px solid rgb(218, 206, 206);
+}
+
+.organizations > h6 {
+    color: #24292f;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.organizations > div {
+    display: flex;
+    align-items: center;
+}
+
+.organizations > div > img {
+    margin-right: 8px;
+    filter: brightness(0) invert(0.5);
+}
+
+
+@media screen and (max-width: 870px) {
+    .layout{
+        flex-direction: column;
+    }
+    
+    
+    .profile__description {
+        width: 100%;
+    }
+
+    
+}

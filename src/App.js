@@ -1,11 +1,15 @@
-import './App.css';
+import { Navbar } from "./components";
+import Layout from "./layout";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Github Repos</h1>
-    </div>
-  );
+    <>
+      <Navbar/>
+      <div className="container">
+        <Layout/>
+      </div>
+    </>
+  )
 }
 
 export default App;

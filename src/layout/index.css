@@ -1,0 +1,25 @@
+.layout {
+    display: flex; 
+    justify-content: space-between;
+    position: relative;   
+    padding: 0 24px;
+}
+
+
+
+.right{
+    width: 96%;
+}
+
+
+@media screen and (max-width: 870px) {
+    .layout{
+        flex-direction: column;
+    }
+    
+    .left{
+        width: 100%;   
+    }
+    
+
+}
