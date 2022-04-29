@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <>
             <div className="profile__circle">
-                <img src="" alt="profile pics" />
+                <img src="https://avatars.githubusercontent.com/u/82697198?v=4" alt="profile pics" />
             </div>
 
             <div className="profile__description">
