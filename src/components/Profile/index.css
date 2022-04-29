@@ -6,15 +6,12 @@
     position: relative;
     z-index: 20;
     background: white;
-    top: -20px;
-    /* overflow: hidden; */
+    top: -20px
 }
 
 .left > .profile__circle::after{
     content: "";
     position: absolute;
-    /* height: 30px;
-    width: 30px; */
     border-radius: 50%;
     border: 1px solid rgb(218, 206, 206);
     z-index: 20;
