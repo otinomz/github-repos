@@ -3,7 +3,7 @@ import { fetchProfileAction, fetchRepositoriesAction } from "../../packages/api"
 
 
 // slices to manage actions and change the state
-const repositoriesSlice = createSlice({
+const repositoriesSlices = createSlice({
     name: "repositories",
     initialState: {},
     extraReducers: (builder) => {
@@ -44,6 +44,7 @@ const repositoriesSlice = createSlice({
     }, 
 })
 
+export default repositoriesSlices.reducer
 
 
 
