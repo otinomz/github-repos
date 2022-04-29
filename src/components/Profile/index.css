@@ -78,6 +78,29 @@
     color: #24292f;
 }
 
+.organizations{
+    width: 90%;
+    margin: 16px 0 0;
+    padding: 16px 0 ;
+    border-top: 1px solid rgb(218, 206, 206);
+}
+
+.organizations > h6 {
+    color: #24292f;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.organizations > div {
+    display: flex;
+    align-items: center;
+}
+
+.organizations > div > img {
+    margin-right: 8px;
+    filter: brightness(0) invert(0.5);
+}
+
 
 @media screen and (max-width: 870px) {
     .layout{

@@ -1,6 +1,5 @@
 import People from '../../assets/people.svg'
 import Location from '../../assets/location.svg'
-// import Twitter from '../assets/twitter.svg'
 import Globe from "../../assets/globe.svg"
 import './index.css'
 
@@ -44,6 +43,15 @@ const Profile = () => {
                 <div>
                     <img src={Globe} alt="globe icon" />
                     @otinomz
+                </div>
+            </section>
+
+            <section className="organizations">
+                <h6>Organizations</h6>
+                <div>
+                    <img src={Globe} alt="globe icon" />
+                    <img src={Globe} alt="globe icon" />
+                    <img src={Globe} alt="globe icon" />
                 </div>
             </section>
         </>
