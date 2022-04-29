@@ -12,9 +12,12 @@ export const fetchRepositoriesAction = ("repositoryList",
     
         try {
             // make HTTP call here 
-            const res = await axios.get(`https://api.github.com/users/${user}/repos?per_page=20`)
-
-        } catch (error) {
+            const { data } = await axios.get(`https://api.github.com/users/${user}/repos?per_page=20&sort=asc`)
             
+            return data
+        } catch (error) {
+            if (!error?.response) {
+                throw error
+            }
         }
 })
