@@ -92,7 +92,6 @@
 
 .language{
     display: flex;
-    align-items: center;
 }
 
 .language > p {
@@ -101,9 +100,9 @@
 }
 
 .color{
-    height: 10px;
-    width: 10px;
-    background: red;
+    height: 12px;
+    width: 12px;
+    background: #E34c26;
     border-radius: 50%;
     margin-right: 5px;
 }
