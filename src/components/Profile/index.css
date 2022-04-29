@@ -8,19 +8,44 @@
     background: white;
     top: -20px
 }
-
+/* 
 .left > .profile__circle::after{
     content: "";
     position: absolute;
     border-radius: 50%;
     border: 1px solid rgb(218, 206, 206);
     z-index: 20;
-    padding: 15px;
-    background: white;
+    height: 8px;
+    width: 8px;
+    padding: 14px;
+    background: white url("https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png");
+    background-size: contain;
+    border: 2px solid rgb(218, 206, 206);
     bottom: 25px;
     right: 18px;
+} */
+
+
+.profile__circlez{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgb(218, 206, 206);
+    z-index: 20;
+    padding: 16px;
+    background-size: contain;
+    border: 1px solid rgb(218, 206, 206);
+    bottom: 25px;
+    right: 18px;
+    background: white;
 }
 
+.profile__circlez > img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
 
 .profile__circle > img {
     height: 100%;

@@ -8,6 +8,9 @@ const Profile = () => {
         <>
             <div className="profile__circle">
                 <img src="https://avatars.githubusercontent.com/u/82697198?v=4" alt="profile pics" />
+                <div className="profile__circlez">
+                    <img  src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" alt="profile pics" />
+                </div>
             </div>
 
             <div className="profile__description">
