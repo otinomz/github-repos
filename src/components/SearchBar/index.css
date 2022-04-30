@@ -44,26 +44,19 @@ section > .select > img {
     background: whitesmoke;
 }
 
-
-
 .form > section > .button {
     background: #2da44e;
     color: #fff;
 }
 
-
 .form > section > .button:hover {
     background: #2b8a46;
 }
-
-
 
 .form > section > .button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
 }
-
-
 
 @media screen and (max-width: 870px) {
 
@@ -79,6 +72,5 @@ section > .select > img {
     .form > section  > .button {
         display: none;
     }
-
     
 }
