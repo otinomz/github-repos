@@ -14,7 +14,6 @@ const RepoCard = () => {
     useEffect(() => {
         dispatch(fetchRepositoriesAction("otinomz"))
         dispatch(fetchProfileAction("otinomz"))
-    
     }, [dispatch])
     
     return (
