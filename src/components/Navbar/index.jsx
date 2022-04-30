@@ -6,21 +6,20 @@ import { List } from './List'
 const Navbar = () => {
     const store = useSelector((state) => state?.repositories)
     
+    const { profile }  = store
+    
 
-    const { repositoriesList } = store
-    console.log("repos", repositoriesList) 
 
     return (
         <nav className="nav">
             <section>
-                Navbar
+                <span>{profile?.name} {profile?.login}</span>
 
                 <ul className="right__items">
                     { List.map(({id, name, icon}) => (
                         <li key={id}>
                             <img className="grey" src={icon} alt="" />
                             <p>{name}</p>
-                            <p>{ repositoriesList?.name}</p>
                         </li>
                     ))}
                 </ul>                

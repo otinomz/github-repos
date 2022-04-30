@@ -16,6 +16,10 @@
     padding: 12px 24px 12px;
 }
 
+span{
+    font-weight: 600;
+}
+
 .right__items{
     display: flex;
     width: 71%;
