@@ -6,7 +6,7 @@
     position: relative;
     z-index: 20;
     background: white;
-    top: -20px
+    top: -20px;
 }
 
 .profile__circlez{
@@ -45,10 +45,14 @@
 }
 
 .profile__description > span {
-    font-size: 24px;
+    font-size: 20px;
     color: #57606a;
     padding: 16px 0;
     display: block;
+}
+
+.profile__description > .work {
+    display: none;
 }
 
 .profile__description > .bio{
@@ -135,14 +139,43 @@
 
 
 @media screen and (max-width: 870px) {
-    .layout{
-        flex-direction: column;
+    .left > .profile__circle{
+        height: 50px;
+        width: 50px;
+        margin-top: 35px;
     }
-    
-    
+   
+
+    .profile__circlez{
+        display: none;
+    }
+   
     .profile__description {
         width: 100%;
     }
 
+    .profile__description > .work {
+        display: block;
+        margin: 25px 0 10px;
+        display: flex;
+        align-items: center;
+        padding: 5px 7px;
+    }
+
+
+    .profile__description > span{
+        position: absolute;
+        top: 12px;
+        left: 73px;
+    }
+
+    .profile__description > .work:hover {
+        color: blue;
+    }
+
+    .profile__description > .work > img{
+        width: 17px;
+        margin-right: 10px;
+    }
     
 }

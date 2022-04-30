@@ -21,10 +21,14 @@ const Profile = () => {
                             <img  src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" alt="profile pics" />
                         </div>
                     </div>
-
+                    
                     <div className="profile__description">
                         <span>{profile?.name} {profile?.login}</span>
-                    
+                        <button className="work">
+                            <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" alt="profile pics" />
+                            Focusing
+                        </button>
+                        
                         <div className="bio">
                             {profile?.bio}
                         </div>
