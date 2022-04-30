@@ -19,7 +19,6 @@ const Profile = () => {
     console.log(store ) 
     const { loading, profile, error }  = store
     
-
      
     return (
         <>
