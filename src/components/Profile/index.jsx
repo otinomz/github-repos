@@ -2,18 +2,9 @@ import People from '../../assets/people.svg'
 import Location from '../../assets/location.svg'
 import Globe from "../../assets/globe.svg"
 import './index.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { useEffect } from 'react'
-import { fetchProfileAction, fetchRepositoriesAction } from '../../packages/api'
+import { useSelector } from 'react-redux'
 
 const Profile = () => {
-    // dispatch the actions
-    const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(fetchRepositoriesAction("otinomz"))
-        dispatch(fetchProfileAction("otinomz"))
-    }, [dispatch])
-
     // getting the data from redux store
     const store = useSelector((state) => state?.repositories)
     const { loading, profile, error }  = store
