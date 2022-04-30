@@ -3,30 +3,28 @@ import { useSelector } from 'react-redux'
 import "./index.css"
 import { List } from './List'
 
-const Navbar = () => {
+const MobileNav = () => {
     const store = useSelector((state) => state?.repositories)
     
-    const { profile }  = store
-    
 
+    const { repositoriesList } = store
+    console.log("repos", repositoriesList) 
 
     return (
-        <nav className="nav">
+        <nav className="mobile__nav">
             <section>
-                <span>{profile?.name} {profile?.login}</span>
-
                 <ul className="right__items">
                     { List.map(({id, name, icon}) => (
                         <li key={id}>
                             <img className="grey" src={icon} alt="" />
                             <p>{name}</p>
+                            <p>{ repositoriesList?.name}</p>
                         </li>
                     ))}
                 </ul>                
-
             </section>
         </nav>
     )
 }
 
-export default Navbar
+export default MobileNav

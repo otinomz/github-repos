@@ -39,7 +39,7 @@ const RepoCard = () => {
                             </div>
                         </section>
                         
-                         <section className="repo__top">
+                        <section className="repo__top">
                             <div className="left__topz">
                                 <div className="language">
                                     <div className="color"></div>

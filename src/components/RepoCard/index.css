@@ -15,7 +15,7 @@
     color: #0969da;
     font-weight: 600;
     font-size: 20px;
-    letter-spacing: 1px;
+    line-height: 24px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -82,6 +82,7 @@
     border: 1px solid rgb(218, 206, 206);
     border-radius: 5px 0 0 5px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .left__bottom > button > img {
@@ -120,3 +121,20 @@
     width: 130px;
     background: green;
 }
+
+
+@media screen and (max-width: 870px) {
+    .left__top > .description {
+        width: 100%;
+        line-height: 17px;
+    }
+
+
+    .left__bottom > .chart {
+        height: 2px;
+        width: 30px;
+        background: green;
+    }
+}
+
+

@@ -1,5 +1,5 @@
 import "./index.css"
-import { Profile, RepoCard, SearchBar } from '../components'
+import { MobileNav, Profile, RepoCard, SearchBar } from '../components'
 import { useState } from "react";
                
                 
@@ -19,9 +19,10 @@ const Layout = () => {
                 <Profile/>
             </section>
             
-        
+
             <section className="right">
-                {/* this houses the Repository card 
+                <MobileNav/>
+                {/* this houses the Repository card
                 and the seaarch bar at the top  */}
                 <SearchBar query={query} setQuery={setQuery} />
                 <RepoCard/>

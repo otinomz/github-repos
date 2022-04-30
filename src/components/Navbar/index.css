@@ -1,4 +1,4 @@
-.nav {
+.nav, .mobile__nav {
     width: 100%;
     border-bottom: 1px solid rgb(218, 206, 206);
     color: #333;
@@ -8,12 +8,16 @@
     background: white;
 }
 
-.nav > section{    
+.nav > section, .mobile__nav > section{    
     display: flex;
     justify-content: space-between;
     max-width: 1250px;
     margin: 0 auto;
     padding: 12px 24px 12px;
+}
+
+span{
+    font-weight: 600;
 }
 
 .right__items{
@@ -56,8 +60,33 @@
 }
 
 
+.mobile__nav {
+    display: none;
+}
+
+
 @media screen and (max-width: 870px) {
     .nav{
         display: none;
     }
-}
+
+    .mobile__nav {
+        margin: 20px 0 0px;
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    
+    .right__items > li:nth-child(2)::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: -4px;
+        bottom: -9px;
+        background: crimson;
+    }
+
+
+}   
