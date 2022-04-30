@@ -22,7 +22,6 @@ export const fetchProfileAction = createAsyncThunk("profileList",
     }
 })
 
-
 // create action for the repositories
 export const fetchRepositoriesAction = createAsyncThunk("repositoryList",
     async (user, {
