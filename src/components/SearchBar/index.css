@@ -60,16 +60,14 @@
 
 
 @media screen and (max-width: 870px) {
-    /* .form {
-        width: 150%;
-    } */
 
     .form {
         flex-direction: column;
     }
 
-    .form > input{
+    .form > .search {
         width: 100%;
     }
+
     
 }
