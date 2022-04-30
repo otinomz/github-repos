@@ -19,5 +19,9 @@
     .left{
         width: 100%;   
     }
+
+    .right{
+        margin-left: 0;
+    }
     
 }

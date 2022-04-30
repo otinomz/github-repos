@@ -1,10 +1,12 @@
+import { useState } from "react";
 import Down from "../../assets/down.svg"
 import Repo from "../../assets/repo.svg"
 import './index.css'
 
 
-const SearchBar = () => {
+const SearchBar = ({query, setQuery}) => {
     
+
     return (
         <form className="form">
             
@@ -12,6 +14,8 @@ const SearchBar = () => {
                 type="text"
                 placeholder='Find a repository...'
                 className="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
             />
         
             <button className="select">
