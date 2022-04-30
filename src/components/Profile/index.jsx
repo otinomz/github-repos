@@ -27,7 +27,7 @@ const Profile = () => {
                 loading ? <h1>Loading please wait...</h1> : error ? <h2> {error?.message} </h2> : 
                 <>
                     <div className="profile__circle">
-                        <img src="https://avatars.githubusercontent.com/u/82697198?v=4" alt="profile pics" />
+                        <img src={profile?.avatar_url} alt="profile pics" />
                         <div className="profile__circlez">
                             <img  src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png" alt="profile pics" />
                         </div>
