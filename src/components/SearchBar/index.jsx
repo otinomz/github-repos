@@ -1,6 +1,8 @@
+import { useDispatch } from "react-redux"
 import Down from "../../assets/down.svg"
 import Repo from "../../assets/repo.svg"
 import './index.css'
+
 
 const SearchBar = () => {
     return (
