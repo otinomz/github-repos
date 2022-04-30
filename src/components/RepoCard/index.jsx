@@ -1,8 +1,18 @@
 import Star from "../../assets/star.svg"
 import Down from "../../assets/down.svg"
 import './index.css'
+import { useDispatch } from "react-redux"
+import { useEffect } from "react"
+import { fetchRepositoriesAction } from "../../packages/api"
 
 const RepoCard = () => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchRepositoriesAction("emma"))
+    
+    }, [dispatch])
+    
     return (
         <>
             <div className="repo__container">
