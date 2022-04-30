@@ -9,7 +9,7 @@ const Layout = () => {
     const [query, setQuery] = useState("");
     //  set search parameters
     //  we only want to search Repositories
-    const [searchParam] = useState(["capital", "name"]);
+    // const [searchParam] = useState(["capital", "name"]);
 
 
 

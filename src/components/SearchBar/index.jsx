@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Down from "../../assets/down.svg"
 import Repo from "../../assets/repo.svg"
 import './index.css'
