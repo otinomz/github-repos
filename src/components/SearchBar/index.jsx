@@ -8,6 +8,14 @@ const SearchBar = ({query, setQuery}) => {
 
     return (
         <form className="form">
+            {/* this button is actually set to a display of none for 
+                desktop site while it shown for mobile
+            */}
+            <button className="button">
+                <img src={Repo} alt="" />
+                New
+            </button>
+
             
             <input
                 type="text"
@@ -16,6 +24,7 @@ const SearchBar = ({query, setQuery}) => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
             />
+
 
             <section>
                 <button className="select">

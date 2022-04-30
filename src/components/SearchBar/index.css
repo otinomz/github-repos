@@ -18,7 +18,9 @@
     display: flex;
 }
 
-.form > section > .select, .form > section > .button{
+.form > .button,
+.form > section > .select,
+.form > section > .button{
     padding: 7px 10px;
     border-radius: 5px;
     border: 1px solid rgb(218, 206, 206);
@@ -35,6 +37,8 @@
     transition: 0.5s;
 }
 
+
+
 section > .select > img {
     margin-left: 4px;
 }
@@ -44,16 +48,25 @@ section > .select > img {
     background: whitesmoke;
 }
 
-.form > section > .button {
+.form > .button{
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 24px;
+    width: 100%;
+    display: none;
+}
+
+
+.form > .button, .form > section > .button {
     background: #2da44e;
     color: #fff;
 }
 
-.form > section > .button:hover {
+.form > .button:hover, .form > section > .button:hover {
     background: #2b8a46;
 }
 
-.form > section > .button > img {
+.form > .button > img, .form > section > .button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
 }
@@ -73,4 +86,16 @@ section > .select > img {
         display: none;
     }
     
+
+    .form > .button,
+    .form > section > .select,
+    .form > section > .button{
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .form > .button{
+        display: block;
+    }
+
 }
