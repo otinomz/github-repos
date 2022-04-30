@@ -51,7 +51,7 @@
     display: block;
 }
 
-.profile__description > div{
+.profile__description > .bio{
     font-size: 16px;
     color: #24292f;
     line-height: 24px;
@@ -85,6 +85,7 @@
     align-items: center;
     margin-right: 12px;
     padding: 4px 0;
+    font-size: 14px;
 }
 
 .followers__info > div > img, 
@@ -100,6 +101,7 @@
     font-weight: bold;
     margin-right: 3px;
     color: #24292f;
+    
 }
 
 
