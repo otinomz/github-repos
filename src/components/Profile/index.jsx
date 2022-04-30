@@ -34,10 +34,10 @@ const Profile = () => {
                     </div>
 
                     <div className="profile__description">
-                        <span>otinomz</span>
+                        <span>{profile?.login}</span>
                     
                         <div className="bio">
-                            One code at a time cos what i cannot create, I do not understand
+                            {profile?.bio}
                         </div>
 
                         <button>Edit Profile</button>
@@ -46,35 +46,36 @@ const Profile = () => {
                     <section className="followers__info">
                         <div>
                             <img src={People} alt="people icon" />
-                            <span>12 </span> followers
+                            <span>{profile?.followers} </span> followers
                         </div>
 
                         <div>
                             <img src="" alt="" />
-                            <span>14 </span> following
+                            <span>{profile?.following}</span> following
                         </div>
                     </section>
 
                     <section className="location__info">
                         <div>
                             <img src={Location} alt="location icons" />
-                            Jos North, Nigeria
+                            {profile?.location}
                         </div>
                     </section>
 
                     <section className="link__info">
                         <div>
                             <img src={Globe} alt="globe icon" />
-                            @otinomz
+                            {profile?.twitter_username}
                         </div>
                     </section>
 
                     <section className="organizations">
                         <h6>Organizations</h6>
                         <div>
+                            {/* <img src={profile?.organizations_url} alt="globe icon" />
                             <img src={Globe} alt="globe icon" />
-                            <img src={Globe} alt="globe icon" />
-                            <img src={Globe} alt="globe icon" />
+                            <img src={Globe} alt="globe icon" /> */}
+                            <img src={profile?.organizations_url} alt="organzations url" />
                         </div>
                     </section>
                 </>
