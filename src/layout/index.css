@@ -5,15 +5,12 @@
     padding: 0 24px;
 }
 
-
-
 .right{
     width: 96%;
     margin-left: 20px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
-
 
 @media screen and (max-width: 870px) {
     .layout{
@@ -24,5 +21,4 @@
         width: 100%;   
     }
     
-
 }

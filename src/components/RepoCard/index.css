@@ -18,6 +18,7 @@
     letter-spacing: 1px;
     text-decoration: none;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .repo__container > .repo__top > .left__top > .text > a:hover {
@@ -44,7 +45,9 @@
     font-size: 12px;
     text-decoration: none;
     margin-right: 10px;
+    cursor: pointer;
 }
+
 
 .left__top > .description {
     margin: 14px 0 0;

@@ -35,7 +35,7 @@ const RepoCard = () => {
                         <section className="repo__top">
                             <div className="left__top">
                                 <div className="text">
-                                    <a href={repositories?.html_url}> {repositories?.name} </a>
+                                    <a href="{repositories?.html_url}" target="_"> {repositories?.name} </a>
                                     <button> {repositories?.visibility} </button>
                                 </div>
                                 <p className="description">{repositories?.description}</p>
