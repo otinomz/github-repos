@@ -16,24 +16,26 @@ const SearchBar = ({query, setQuery}) => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
             />
-        
-            <button className="select">
-                Type
-                <img src={ Down } alt="" />
-            </button>
-            <button className="select">
-                Language
-                <img src={ Down } alt="" />
-            </button>
-            <button className="select">
-                Sort
-                <img src={ Down } alt="" />
-            </button>
 
-            <button className="button">
-                <img src={Repo} alt="" />
-                New
-            </button>
+            <section>
+                <button className="select">
+                    Type
+                    <img src={ Down } alt="" />
+                </button>
+                <button className="select">
+                    Language
+                    <img src={ Down } alt="" />
+                </button>
+                <button className="select">
+                    Sort
+                    <img src={ Down } alt="" />
+                </button>
+
+                <button className="button">
+                    <img src={Repo} alt="" />
+                    New
+                </button>
+            </section>
         </form>
     )
 }

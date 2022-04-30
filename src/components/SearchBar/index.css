@@ -1,7 +1,6 @@
 .form {
     padding: 16px 0;
     display: flex;
-    background: red;
     width: 100%;
 }
 
@@ -15,7 +14,11 @@
     border: 1px solid rgb(218, 206, 206);
 }
 
-.form > .select, .form > .button{
+.form > section {
+    display: flex;
+}
+
+.form > section > .select, .form > section > .button{
     padding: 7px 10px;
     border-radius: 5px;
     border: 1px solid rgb(218, 206, 206);
@@ -32,27 +35,30 @@
     transition: 0.5s;
 }
 
-.select > img {
+section > .select > img {
     margin-left: 4px;
 }
 
 
-.form > .select:hover{
+.form > section > .select:hover{
     background: whitesmoke;
 }
 
 
-.form > .button {
+
+.form > section > .button {
     background: #2da44e;
     color: #fff;
 }
 
-.form > .button:hover {
+
+.form > section > .button:hover {
     background: #2b8a46;
 }
 
 
-.form > .button > img {
+
+.form > section > .button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
 }
@@ -67,6 +73,11 @@
 
     .form > .search {
         width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form > section  > .button {
+        display: none;
     }
 
     
