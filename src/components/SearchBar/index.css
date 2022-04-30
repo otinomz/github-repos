@@ -1,9 +1,9 @@
-.top {
+.form {
     padding: 16px 0;
     display: flex;
 }
 
-.top > .search {
+.form > .search {
     padding: 7px 12px;
     font-size:14px;
     border-radius: 5px;
@@ -13,7 +13,7 @@
     border: 1px solid rgb(218, 206, 206);
 }
 
-.top > .select, .top > .button{
+.form > .select, .form > .button{
     padding: 7px 10px;
     border-radius: 5px;
     border: 1px solid rgb(218, 206, 206);
@@ -35,22 +35,22 @@
 }
 
 
-.top > .select:hover{
+.form > .select:hover{
     background: whitesmoke;
 }
 
 
-.top > .button {
+.form > .button {
     background: #2da44e;
     color: #fff;
 }
 
-.top > .button:hover {
+.form > .button:hover {
     background: #2b8a46;
 }
 
 
-.top > .button > img {
+.form > .button > img {
     margin-right: 4px;
     filter: brightness(1) invert(1);
 }

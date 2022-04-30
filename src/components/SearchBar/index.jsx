@@ -4,7 +4,8 @@ import './index.css'
 
 const SearchBar = () => {
     return (
-        <div className="top">
+        <form className="form">
+            
             <input
                 type="text"
                 placeholder='Find a repository...'
@@ -28,7 +29,7 @@ const SearchBar = () => {
                 <img src={Repo} alt="" />
                 New
             </button>
-        </div>
+        </form>
     )
 }
 
