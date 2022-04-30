@@ -17,7 +17,7 @@ const Profile = () => {
     // getting the data from redux store
     const store = useSelector((state) => state?.repositories)
     console.log(store ) 
-    const { loading, repositoriesList, profile, error }  = store
+    const { loading, profile, error }  = store
     
 
      
@@ -34,7 +34,7 @@ const Profile = () => {
                     </div>
 
                     <div className="profile__description">
-                        <span>{profile?.login}</span>
+                        <span>{profile?.name} {profile?.login}</span>
                     
                         <div className="bio">
                             {profile?.bio}
