@@ -177,5 +177,9 @@
         width: 17px;
         margin-right: 10px;
     }
+
+    .organizations{
+        display: none;
+    }
     
 }
