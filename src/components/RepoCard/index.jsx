@@ -18,8 +18,11 @@ const RepoCard = () => {
     }, [dispatch])
 
     // getting the data from redux store
-    const state = useSelector((state) => state?.repositories)
-    console.log(state) 
+    const store = useSelector((state) => state?.repositories)
+    console.log(store) 
+
+    const {loading, repositoriesList, profile, error }  = store
+    
 
     return (
         <>
