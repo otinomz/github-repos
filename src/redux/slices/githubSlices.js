@@ -5,7 +5,7 @@ import { fetchProfileAction, fetchRepositoriesAction } from "../../packages/api"
 const repositoriesSlices = createSlice({
     name: "repositories",
     initialState: {
-        user: ""
+        user: "otinomz"
     },
 
     extraReducers: (builder) => {

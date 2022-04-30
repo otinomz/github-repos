@@ -1,7 +1,7 @@
 import Star from "../../assets/star.svg"
 import Down from "../../assets/down.svg"
 import './index.css'
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import {
     fetchProfileAction,
@@ -9,13 +9,18 @@ import {
 } from "../../packages/api"
 
 const RepoCard = () => {
-    const dispatch = useDispatch()
 
+    // dispatch the actions
+    const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchRepositoriesAction("otinomz"))
         dispatch(fetchProfileAction("otinomz"))
     }, [dispatch])
-    
+
+    // getting the data from redux store
+    const state = useSelector((state) => state?.repositories)
+    console.log(state) 
+
     return (
         <>
             <div className="repo__container">
