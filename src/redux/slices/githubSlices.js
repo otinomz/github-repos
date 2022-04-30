@@ -16,13 +16,13 @@ const repositoriesSlices = createSlice({
 
         builder.addCase(fetchRepositoriesAction.fulfilled, (state, action) => {
             state.loading = false
-            state.reposList = action?.payload
+            state.repositoriesList = action?.payload
             state.error = undefined
         });
 
         builder.addCase(fetchRepositoriesAction.rejected, (state, action) => {
             state.loading = false
-            state.reposList = undefined
+            state.repositoriesList = undefined
             state.error = action?.payload
         });
 

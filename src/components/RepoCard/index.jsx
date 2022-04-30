@@ -9,7 +9,7 @@ const RepoCard = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(fetchRepositoriesAction("emma"))
+        dispatch(fetchRepositoriesAction("otinomz"))
     
     }, [dispatch])
     
