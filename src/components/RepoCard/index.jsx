@@ -3,13 +3,17 @@ import Down from "../../assets/down.svg"
 import './index.css'
 import { useDispatch } from "react-redux"
 import { useEffect } from "react"
-import { fetchRepositoriesAction } from "../../packages/api"
+import {
+    fetchProfileAction,
+    fetchRepositoriesAction
+} from "../../packages/api"
 
 const RepoCard = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(fetchRepositoriesAction("otinomz"))
+        dispatch(fetchProfileAction("otinomz"))
     
     }, [dispatch])
     
