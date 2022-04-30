@@ -4,7 +4,7 @@ import './index.css'
 
 
 const SearchBar = () => {
-
+    
     return (
         <form className="form">
             

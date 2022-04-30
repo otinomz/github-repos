@@ -16,7 +16,6 @@ const Profile = () => {
 
     // getting the data from redux store
     const store = useSelector((state) => state?.repositories)
-    console.log(store ) 
     const { loading, profile, error }  = store
     
      

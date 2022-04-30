@@ -1,28 +1,14 @@
 import Star from "../../assets/star.svg"
 import Down from "../../assets/down.svg"
 import './index.css'
-import { useDispatch, useSelector } from "react-redux"
-import { useEffect, useState } from "react"
-import {
-    fetchProfileAction,
-    fetchRepositoriesAction
-} from "../../packages/api"
+import { useSelector } from "react-redux"
+
 
 const RepoCard = () => {
-    // const [user, setUser] =  useState("otinomz")
-
-    // dispatch the actions
-    const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(fetchRepositoriesAction("otinomz"))
-        dispatch(fetchProfileAction("otinomz"))
-    }, [dispatch])
-
-    // getting the data from redux store
+    
+    
     const store = useSelector((state) => state?.repositories)
-    console.log(store ) 
-
-    const { loading, repositoriesList, profile, error }  = store
+    const {repositoriesList }  = store
     
 
     return (
@@ -35,7 +21,7 @@ const RepoCard = () => {
                         <section className="repo__top">
                             <div className="left__top">
                                 <div className="text">
-                                    <a href="{repositories?.html_url}" target="_"> {repositories?.name} </a>
+                                    <a href={repositories?.html_url} target="_"> {repositories?.name} </a>
                                     <button> {repositories?.visibility} </button>
                                 </div>
                                 <p className="description">{repositories?.description}</p>
