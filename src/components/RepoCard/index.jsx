@@ -2,13 +2,14 @@ import Star from "../../assets/star.svg"
 import Down from "../../assets/down.svg"
 import './index.css'
 import { useDispatch, useSelector } from "react-redux"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import {
     fetchProfileAction,
     fetchRepositoriesAction
 } from "../../packages/api"
 
 const RepoCard = () => {
+    // const [user, setUser] =  useState("otinomz")
 
     // dispatch the actions
     const dispatch = useDispatch()
