@@ -2,13 +2,19 @@ import Down from "../../assets/down.svg"
 import Repo from "../../assets/repo.svg"
 import './index.css'
 
-const SearchBar = () => {
+
+const SearchBar = ({query, setQuery}) => {
+    
+
     return (
-        <div className="top">
+        <form className="form">
+            
             <input
                 type="text"
                 placeholder='Find a repository...'
                 className="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
             />
         
             <button className="select">
@@ -28,7 +34,7 @@ const SearchBar = () => {
                 <img src={Repo} alt="" />
                 New
             </button>
-        </div>
+        </form>
     )
 }
 

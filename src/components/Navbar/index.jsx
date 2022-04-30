@@ -1,8 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import "./index.css"
 import { List } from './List'
 
 const Navbar = () => {
+    const store = useSelector((state) => state?.repositories)
+    
+
+    const { repositoriesList } = store
+    console.log("repos", repositoriesList) 
+
     return (
         <nav className="nav">
             <section>
@@ -10,9 +17,10 @@ const Navbar = () => {
 
                 <ul className="right__items">
                     { List.map(({id, name, icon}) => (
-                        <li>
+                        <li key={id}>
                             <img className="grey" src={icon} alt="" />
-                            <p key={id}>{name}</p>
+                            <p>{name}</p>
+                            <p>{ repositoriesList?.name}</p>
                         </li>
                     ))}
                 </ul>

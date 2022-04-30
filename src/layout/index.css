@@ -5,21 +5,25 @@
     padding: 0 24px;
 }
 
-
-
 .right{
-    width: 96%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
 }
-
 
 @media screen and (max-width: 870px) {
     .layout{
         flex-direction: column;
+        padding: 0 16px;
+        font-size: 14px;
     }
     
     .left{
         width: 100%;   
     }
-    
 
+    .right{
+        margin-left: 0;
+    }
+    
 }

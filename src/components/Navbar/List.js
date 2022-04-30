@@ -6,6 +6,7 @@ import Star from "../../assets/star.svg"
 
 
 export const List = [
+
     {
         id: 1,
         name: "Overview",
