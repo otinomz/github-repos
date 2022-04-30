@@ -1,7 +1,8 @@
+import { createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios"
 
 // create action for the user Profile
-export const fetchProfileAction = ("profileList",
+export const fetchProfileAction = createAsyncThunk("profileList",
     async (user, {
             rejectWithValue,
             getState,
@@ -23,7 +24,7 @@ export const fetchProfileAction = ("profileList",
 
 
 // create action for the repositories
-export const fetchRepositoriesAction = ("repositoryList",
+export const fetchRepositoriesAction = createAsyncThunk("repositoryList",
     async (user, {
             rejectWithValue,
             getState,
