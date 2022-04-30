@@ -128,6 +128,13 @@
         width: 100%;
         line-height: 17px;
     }
+
+
+    .left__bottom > .chart {
+        height: 2px;
+        width: 30px;
+        background: green;
+    }
 }
 
 
