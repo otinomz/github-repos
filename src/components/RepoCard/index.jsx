@@ -19,9 +19,9 @@ const RepoCard = () => {
 
     // getting the data from redux store
     const store = useSelector((state) => state?.repositories)
-    console.log(store) 
+    console.log(store ) 
 
-    const {loading, repositoriesList, profile, error }  = store
+    const { loading, repositoriesList, profile, error }  = store
     
 
     return (
