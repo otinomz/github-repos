@@ -10,7 +10,7 @@ const Layout = () => {
     //  set search parameters
     //  we only want to search Repositories by their name
     // query and setQuery are passed to the SearchBar
-    //  and Repositories List components
+    //  and Repositories List components.
 
 
     return (
