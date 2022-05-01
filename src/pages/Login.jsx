@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.css'
-
+import Task from "../assets/task.svg"
 
 const Login = () => {
     return (
@@ -12,7 +12,7 @@ const Login = () => {
 
                 <button>
                     <Link className="link" to="/profile">
-                        Sign in With Github
+                       <img src={Task} alt="github icon" /> Sign in With Github
                     </Link>
                 </button>
                 <footer>Created With Love By Otinomo 💖💖</footer> 

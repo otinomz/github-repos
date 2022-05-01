@@ -45,6 +45,14 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__container > section > button > .link > img{
+    margin-right: 4px;
+    filter: brightness(0) invert(1);
 }
 
 .login__container > section > button:hover{
