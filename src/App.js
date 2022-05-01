@@ -19,6 +19,7 @@ const App = () => {
       <div className="container">
         <Layout/>
       </div>
+      <footer>Created With Love By Otinomo 💖💖</footer>
     </>
   )
 }
