@@ -1,0 +1,41 @@
+.login__container{
+    background: whitesmoke;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__container > section{
+    padding: 0 10px;
+    margin: 10px;
+    align-items: center;
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px solid rgb(218, 206, 206);
+}
+
+.login__container > section > button{
+    border: none;
+    background: blue;
+    padding: 10px 20px;
+    line-height: 20px;
+    width: 100%;
+    margin: 40px 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login__container > section > button > .link{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login__container > section > button:hover{
+    background: rgb(12, 12, 175);
+}
+
