@@ -3,7 +3,6 @@ import Down from "../../assets/down.svg"
 import './index.css'
 import { useSelector } from "react-redux"
 
-
 const RepoCard = ({ query }) => {    
     const store = useSelector((state) => state?.repositories)
     const {repositoriesList }  = store
