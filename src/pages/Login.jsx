@@ -12,7 +12,7 @@ const Login = () => {
 
             </section>
 
-            
+            ©️ {(new Date().getFullYear())}
         </div>
     )
 }
