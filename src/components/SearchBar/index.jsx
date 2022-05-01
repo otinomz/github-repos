@@ -1,5 +1,6 @@
 import Down from "../../assets/down.svg"
 import Repo from "../../assets/repo.svg"
+import { btnData } from "./btnData"
 import './index.css'
 
 
@@ -28,20 +29,15 @@ const SearchBar = ({query, setQuery}) => {
                 onChange={(e) => setQuery(e.target.value)}
             />
 
-
             <section>
-                <button className="select">
-                    Type
-                    <img src={ Down } alt="" />
-                </button>
-                <button className="select">
-                    Language
-                    <img src={ Down } alt="" />
-                </button>
-                <button className="select">
-                    Sort
-                    <img src={ Down } alt="" />
-                </button>
+                {
+                    btnData.map(({ id, name }) => (
+                        <button className="select" key={id}>
+                            {name}
+                            <img src={ Down } alt="" />
+                        </button>
+                    ))
+                }
 
                 <button className="button">
                     <img src={Repo} alt="" />

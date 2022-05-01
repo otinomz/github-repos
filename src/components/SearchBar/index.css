@@ -31,7 +31,6 @@
     transition: 0.5s;
     color: grey;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-size: 14px;
     transition: 0.5s;
@@ -48,18 +47,22 @@ section > .select > img {
     background: whitesmoke;
 }
 
-.form > .button{
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 24px;
-    width: 100%;
-    display: none;
-}
-
 
 .form > .button, .form > section > .button {
     background: #2da44e;
     color: #fff;
+}
+
+
+.form > .button{
+    display: none;
+    justify-content: center;
+    margin: 0 0 24px;
+    width: 100%;
+}
+
+.form > .button > img{
+    width: 12px;
 }
 
 .form > .button:hover, .form > section > .button:hover {
@@ -96,6 +99,6 @@ section > .select > img {
 
     .form > .button{
         display: block;
+        font-size: 14px;
     }
-
 }
