@@ -25,7 +25,7 @@ const Layout = () => {
                 {/* this houses the Repository card
                 and the seaarch bar at the top  */}
                 <SearchBar query={query} setQuery={setQuery} />
-                <RepoCard query={query} setQuery={setQuery} />
+                <RepoCard query={query} />
             </section>
         </div>
     )
