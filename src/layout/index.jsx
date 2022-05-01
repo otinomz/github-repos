@@ -5,12 +5,12 @@ import { useState } from "react";
                 
 
 const Layout = () => {
-    //     set search query to empty string
+    //  set search query to empty string
     const [query, setQuery] = useState("");
     //  set search parameters
-    //  we only want to search Repositories
-    // const [searchParam] = useState(["capital", "name"]);
-
+    //  we only want to search Repositories by their name
+    // query and setQuery are passed to the SearchBar
+    //  and Repositories List components.
 
 
     return (
@@ -25,7 +25,7 @@ const Layout = () => {
                 {/* this houses the Repository card
                 and the seaarch bar at the top  */}
                 <SearchBar query={query} setQuery={setQuery} />
-                <RepoCard/>
+                <RepoCard query={query} />
             </section>
         </div>
     )
