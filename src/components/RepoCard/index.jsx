@@ -8,7 +8,6 @@ const RepoCard = ({ query }) => {
     const store = useSelector((state) => state?.repositories)
     const {repositoriesList }  = store
 
-
     return (
         <>
             {/* we search through only a filtered array of mapped items */}

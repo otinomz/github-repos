@@ -104,7 +104,21 @@ span{
 
 
 @media screen and (max-width: 470px) {
+    
+    .right__items > li {
+        margin-right: 5px;
+    }
+    
+    .right__items > li:nth-child(2){
+        margin-right: 10px;
+    }
+
     .right__items > li > img{
         display: none;    
+    }
+
+
+    .right__items > li:nth-child(2)::after {
+        left: 0;
     }
 }   
