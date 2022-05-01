@@ -13,7 +13,7 @@ const Profile = () => {
     return (
         <>
             {
-                loading ? <h1>Loading please wait...</h1> : error ? <h2> {error?.data.message} </h2> : 
+                loading ? <h3>Loading please wait...</h3> : error ? <h2> {error?.data.message} </h2> : 
                 <>
                     <div className="profile__circle">
                         <img src={profile?.avatar_url} alt="profile pics" />
