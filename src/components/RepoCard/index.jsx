@@ -18,7 +18,7 @@ const RepoCard = ({ query }) => {
                         return value
                     } else if (value?.name.toLowerCase().includes(query.toLowerCase())) {
                         return value
-                    }
+                    } 
                     return ""
                 }).map((repositories) => (
                     

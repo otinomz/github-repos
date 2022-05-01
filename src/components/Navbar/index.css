@@ -100,5 +100,11 @@ span{
         background: crimson;
     }
 
+}   
 
+
+@media screen and (max-width: 470px) {
+    .right__items > li > img{
+        display: none;    
+    }
 }   
