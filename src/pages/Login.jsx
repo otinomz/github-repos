@@ -5,15 +5,14 @@ const Login = () => {
     return (
         <div className="login__container">
             
-            
             <section>
 
-                <button>Login With Github</button>
+                <button>Sign in With Github</button>
+                <footer>Created With Love By Otinomo 💖💖</footer> 
 
             </section>
 
-            <footer>Created With Love By Otinomo 💖💖</footer> 
-
+            
         </div>
     )
 }

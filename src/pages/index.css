@@ -1,5 +1,5 @@
 .login__container{
-    background: #eeee;
+    background: whitesmoke;
     height: 100vh;
     position: fixed;
     width: 100%;
@@ -10,10 +10,10 @@
 }
 
 .login__container > section{
-    display: flex;
-    padding: 0 30px;
+    padding: 0 10px;
+    margin: 10px;
     align-items: center;
-    max-width: 200px;
+    min-width: 200px;
     min-height: 200px;
     border: 1px solid rgb(218, 206, 206);
     color: whitesmoke;
@@ -26,5 +26,7 @@
     font-weight: 600;
     padding: 10px 20px;
     line-height: 20px;
+    width: 100%;
+    margin: 40px 0 20px;
 }
 
