@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './index.css'
 
 
@@ -7,7 +8,11 @@ const Login = () => {
             
             <section>
 
-                <button>Sign in With Github</button>
+                <button>
+                    <Link className="link" to="/profile">
+                        Sign in With Github
+                    </Link>
+                </button>
                 <footer>Created With Love By Otinomo 💖💖</footer> 
 
             </section>

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Navbar } from "./components";
-import Layout from "./layout";
 import { fetchProfileAction, fetchRepositoriesAction } from "./packages/api";
 import Login from "./pages/Login";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   // dispatch the actions
@@ -15,14 +15,12 @@ const App = () => {
   }, [dispatch])
 
   return (
-    <>
-      <Login/>
-      {/* <Navbar/>
-      <div className="container">
-        <Layout/>
-      </div>
-      <footer>Created With Love By Otinomo 💖💖</footer> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/profile" element={<Dashboard/>} />        
+      </Routes>
+    </BrowserRouter>
   )
 }
 
