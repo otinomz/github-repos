@@ -28,5 +28,11 @@
     line-height: 20px;
     width: 100%;
     margin: 40px 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login__container > section > button:hover{
+    background: rgb(12, 12, 175);
 }
 
