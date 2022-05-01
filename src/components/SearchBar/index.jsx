@@ -5,9 +5,12 @@ import './index.css'
 
 const SearchBar = ({query, setQuery}) => {
     
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
             {/* this button is actually set to a display of none for 
                 desktop site while it shown for mobile
             */}
