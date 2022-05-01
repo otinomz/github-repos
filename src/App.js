@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchProfileAction, fetchRepositoriesAction } from "./packages/api";
 import Login from "./pages/Login";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 
 const App = () => {
