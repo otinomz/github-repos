@@ -11,6 +11,8 @@
 .login__container > section{
     padding: 0 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     min-width: 250px;
     min-height: 250px;
@@ -39,3 +41,6 @@
     background: #0d75ec;
 }
 
+.login__container > section > footer{
+    padding: 15px 20px;
+}
