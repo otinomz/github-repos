@@ -4,18 +4,23 @@ import './index.css'
 import { useSelector } from "react-redux"
 
 
-const RepoCard = () => {
-    
-    
+const RepoCard = ({query, setQuery}) => {    
     const store = useSelector((state) => state?.repositories)
     const {repositoriesList }  = store
-    
+
 
     return (
         <>
-            
+            {/* we search through only a filtered array of mapped items */}
             {
-                repositoriesList?.name !== "Error" && repositoriesList?.map((repositories) => (
+                repositoriesList?.name !== "Error" && repositoriesList?.filter((value) => {
+                    if (query === "") {
+                        return value
+                    } else if (value?.name.toLowerCase().includes(query.toLowerCase())) {
+                        return value
+                    }
+                    return ""
+                }).map((repositories) => (
                     
                     <div className="repo__container" key={repositories?.id}>
                         <section className="repo__top">
