@@ -6,6 +6,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius:10px;
+}
+
+.task {
+    background: whitesmoke;
+    color: rgb(41, 40, 40);
+    margin: 10px 0;
+    padding: 10px;
+    min-width: 250px;
+    text-align: center;
 }
 
 .login__container > section{
