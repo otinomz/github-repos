@@ -15,7 +15,7 @@ export const initialState = {
 
 // slices to manage actions and change the state
 // for the github OAUth 
-const oAuthSlices = createSlice({
+const oauthSlices = createSlice({
     name: "repositories",
     initialState,
     reducers: {
@@ -43,4 +43,4 @@ const oAuthSlices = createSlice({
 
 })
 
-export default oAuthSlices.reducer
+export default oauthSlices.reducer
