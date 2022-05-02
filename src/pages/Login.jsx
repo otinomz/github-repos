@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
 import './index.css'
 import Task from "../assets/task.svg"
+import { useSelector } from 'react-redux'
 
 const Login = () => {
+    const store = useSelector((state) => state?.oauth)
+    
+    const { client_id, redirect_uri } = store
+    
     return (
         <div className="login__container">
             
