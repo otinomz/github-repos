@@ -1,5 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+
+// this is the initial state of 
+// action
 export const initialState = {
     isLoggedIn: JSON.parse(localStorage.getItem("isLoggedIn")) || false,
     user: JSON.parse(localStorage.getItem("user")) || null,
@@ -10,8 +13,8 @@ export const initialState = {
 }
 
 
-
 // slices to manage actions and change the state
+// for the github OAUth 
 const oAuthSlices = createSlice({
     name: "repositories",
     initialState,
@@ -27,7 +30,7 @@ const oAuthSlices = createSlice({
             }
         },
 
-        Logout: (state, action) => {
+        Logout: (state) => {
             localStorage.clear()
             return {
                 ...state,
