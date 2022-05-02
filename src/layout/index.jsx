@@ -19,7 +19,6 @@ const Layout = () => {
                 <Profile/>
             </section>
             
-            
             <section className="right">
                 <MobileNav/>
                 {/* this houses the Repository card

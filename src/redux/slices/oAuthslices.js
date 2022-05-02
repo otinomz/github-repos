@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-
 // this is the initial state of 
 // action
 export const initialState = {
@@ -43,4 +42,15 @@ const oauthSlices = createSlice({
 
 })
 
-export default oauthSlices.reducer
+// export default oauthSlices.reducer
+
+
+const { actions, reducer } = oauthSlices
+
+export const { Login, Logout } = actions
+
+export default reducer
+
+
+
+

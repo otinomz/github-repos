@@ -2,7 +2,7 @@ import React from 'react'
 import { Navbar } from '../../components'
 import Layout from '../../layout'
 
-const Dashboard = () => {
+const Login = () => {
     return (
         <>  
             <Navbar/>
@@ -14,4 +14,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Login

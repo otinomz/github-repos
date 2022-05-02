@@ -2,13 +2,22 @@ import People from '../../assets/people.svg'
 import Location from '../../assets/location.svg'
 import Globe from "../../assets/globe.svg"
 import './index.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { Logout } from '../../redux/slices/oAuthslices'
 
 const Profile = () => {
     // getting the data from redux store
     const store = useSelector((state) => state?.repositories)
-    const { loading, profile, error }  = store
     
+
+    
+    const { loading, profile, error } = store
+    
+    const dispatch = useDispatch()
+
+    const handleLogout = () => {
+        dispatch(Logout())
+    }
      
     return (
         <>
@@ -37,6 +46,9 @@ const Profile = () => {
                         </div>
 
                         <button>Edit Profile</button>
+                        <button onClick={ handleLogout }>
+                            Logout
+                        </button>
                     </div>
                     
                     <section className="followers__info">
