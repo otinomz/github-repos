@@ -42,8 +42,6 @@ const oauthSlices = createSlice({
 
 })
 
-// export default oauthSlices.reducer
-
 
 const { actions, reducer } = oauthSlices
 

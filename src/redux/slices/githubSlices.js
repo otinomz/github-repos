@@ -1,11 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { fetchProfileAction, fetchRepositoriesAction } from "../../packages/api";
 
+
 // slices to manage actions and change the state
 const repositoriesSlices = createSlice({
     name: "repositories",
     initialState: {
-        user: "otinomz"
+        user: ""
+    },
+
+    reducers:  {
+        addName : (state, action) =>  {
+            state.user = action.payload
+        }
     },
 
     extraReducers: (builder) => {
@@ -46,4 +53,14 @@ const repositoriesSlices = createSlice({
     }, 
 })
 
-export default repositoriesSlices.reducer
+// export default repositoriesSlices.reducer
+
+
+// const { actions, reducer } = repositoriesSlices
+
+// export const { addName } = actions
+
+// export default reducer
+const { actions, reducer } = repositoriesSlices
+export const { addName } = actions
+export default reducer;
