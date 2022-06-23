@@ -23,13 +23,14 @@ const App = () => {
 
   const userName = user
   
-  useEffect(() => {
-
+  // useEffect(() => {
+  const action = () => {
+    dispatch(addName("Otinomz"))
     dispatch(fetchRepositoriesAction(userName))
     dispatch(fetchProfileAction(userName))
-    dispatch(addName("Otinomz"))
-
-  }, [dispatch, userName])
+  }
+    
+  action()
 
   useEffect(() => {
     if (!code) return;
@@ -53,6 +54,7 @@ const App = () => {
           console.log(error);
     })
   }
+    
   postData()
   
 }, [code, client_id, client_secret])
