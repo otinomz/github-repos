@@ -11,36 +11,49 @@
 
 .task {
     background: whitesmoke;
-    color: rgb(41, 40, 40);
+    color: rgb(11, 48, 148);
     margin: 10px 0;
     padding: 10px;
-    min-width: 250px;
+    width: 100%;
     text-align: center;
 }
 
-.login__container > section{
-    padding: 0 10px;
+.login__container > form{
+    padding: 10px 10px 30px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 280px;
     border: 1px solid rgb(218, 206, 206);
 }
 
-.login__container > section > button{
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.login__container > form > button,
+.login__container > form > input{
     border: none;
     background: #0969da;
     padding: 15px 20px;
     line-height: 20px;
     width: 100%;
-    margin: 40px 0 20px;
+    margin: 20px 0 0px;
     cursor: pointer;
     transition: 0.5s;
+    color: white;
 }
 
-.login__container > section > button > .link{
+.login__container > form > input{
+    border: 1px solid rgb(218, 206, 206);
+    background: white;
+    color: black;
+}
+
+.login__container > form > button {
     color: whitesmoke;
     text-decoration: none;
     font-weight: 600;
@@ -50,15 +63,16 @@
     justify-content: center;
 }
 
-.login__container > section > button > .link > img{
-    margin-right: 4px;
+.login__container > form > button > img{
+    margin-right: 5px;
     filter: brightness(0) invert(1);
 }
 
-.login__container > section > button:hover{
+.login__container > form > button:hover{
     background: #0d75ec;
 }
 
-.login__container > section > footer{
+.login__container > form > footer{
     padding: 15px 20px;
+    margin-top: 40px;
 }
